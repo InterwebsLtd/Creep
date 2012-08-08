@@ -1,7 +1,7 @@
 name: Creep
 author: Sciguymjm
 main: me.sciguymjm.Creep.Creep
-version: 1.4
+version: 1.5
 description: >
              Spawns mobs at a player's location.
 commands:
@@ -29,4 +29,6 @@ permissions:
   creep.spider:
     [optional permission attributes]
   creep.pigzombie:
+    [optional permission attributes]
+  creep.swarm:
     [optional permission attributes]
