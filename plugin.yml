@@ -1,6 +1,7 @@
 name: Creep
+author: Sciguymjm
 main: me.sciguymjm.Creep.Creep
-version: 1.3
+version: 1.4
 description: >
              Spawns mobs at a player's location.
 commands:
@@ -10,3 +11,22 @@ commands:
     description: Spawn skeletons around a player.
   zombie:
     description: Spawn zombies around a player.
+  enderman:
+    description: Spawn endermen around a player.
+  spider:
+    description: Spawn spiders around a player.
+  pigzombie:
+    description: Spawn pig zombies around a player
+permissions:
+  creep.*:
+    [optional permission attributes]
+  creep.creep:
+    [optional permission attributes]
+  creep.skeleton:
+    [optional permission attributes]
+  creep.zombie:
+    [optional permission attributes]
+  creep.spider:
+    [optional permission attributes]
+  creep.pigzombie:
+    [optional permission attributes]
