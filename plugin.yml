@@ -1,9 +1,8 @@
 name: Creep
 author: Sciguymjm
 main: me.sciguymjm.Creep.Creep
-version: 1.5
-description: >
-             Spawns mobs at a player's location.
+version: 1.7
+description: Spawns mobs at a player's location.
 commands:
   creep:
     description: Spawn creepers around a player.
