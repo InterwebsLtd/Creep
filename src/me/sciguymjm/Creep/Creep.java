@@ -476,6 +476,85 @@ public class Creep extends JavaPlugin
         }
       }
     }
+    if ((string.equalsIgnoreCase("blaze")) && (
+    	      (player.hasPermission("creep.blaze")) || (player.isOp()) || (player.hasPermission("creep.*"))))
+    	    {
+    	      if (args.length == 1) {
+    	        if (player.getServer().getPlayer(args[0]) != null) {
+    	          Player targetPlayer = Bukkit.getServer().getPlayer(args[0]);
+
+    	          Location playerLocation = targetPlayer.getLocation();
+    	          double y = playerLocation.getBlockY();
+    	          double x = playerLocation.getBlockX();
+    	          double z = playerLocation.getBlockZ();
+
+    	          World currentTargetWorld = targetPlayer.getWorld();
+
+    	          Location a1 = new Location(currentTargetWorld, x + 2.0D, y, z);
+    	          Location a2 = new Location(currentTargetWorld, x - 2.0D, y, z);
+    	          Location a3 = new Location(currentTargetWorld, x, y, z + 2.0D);
+    	          Location a4 = new Location(currentTargetWorld, x, y, z - 2.0D);
+
+    	          Blaze s1 = (Blaze)targetPlayer.getWorld().spawn(a1, Blaze.class);
+    	          Blaze s2 = (Blaze)targetPlayer.getWorld().spawn(a2, Blaze.class);
+    	          Blaze s3 = (Blaze)targetPlayer.getWorld().spawn(a3, Blaze.class);
+    	          Blaze s4 = (Blaze)targetPlayer.getWorld().spawn(a4, Blaze.class);
+
+    	          s1.setTarget(targetPlayer);
+    	          s2.setTarget(targetPlayer);
+    	          s3.setTarget(targetPlayer);
+    	          s4.setTarget(targetPlayer);
+
+    	          cs.sendMessage(ChatColor.GRAY + "You spawned blazes around " + targetPlayer.getDisplayName() + "!");
+    	        } else {
+    	          cs.sendMessage(ChatColor.RED + "Error: The player is offline.");
+    	        }
+    	      } else if (args.length > 1)
+    	        player.sendMessage(ChatColor.RED + "Error: Too many arguments!");
+    	      else if (args.length < 1) {
+    	        player.sendMessage(ChatColor.RED + "Error: Not enough arguments!");
+    	      }
+    	    }
+    if ((string.equalsIgnoreCase("cspider")) && (
+    	      (player.hasPermission("creep.cspider")) || (player.isOp()) || (player.hasPermission("creep.*"))))
+    	    {
+    	      if (args.length == 1) {
+    	        if (player.getServer().getPlayer(args[0]) != null) {
+    	          Player targetPlayer = Bukkit.getServer().getPlayer(args[0]);
+
+    	          Location playerLocation = targetPlayer.getLocation();
+    	          double y = playerLocation.getBlockY();
+    	          double x = playerLocation.getBlockX();
+    	          double z = playerLocation.getBlockZ();
+
+    	          World currentTargetWorld = targetPlayer.getWorld();
+
+    	          Location a1 = new Location(currentTargetWorld, x + 2.0D, y, z);
+    	          Location a2 = new Location(currentTargetWorld, x - 2.0D, y, z);
+    	          Location a3 = new Location(currentTargetWorld, x, y, z + 2.0D);
+    	          Location a4 = new Location(currentTargetWorld, x, y, z - 2.0D);
+
+    	          CaveSpider s1 = (CaveSpider)targetPlayer.getWorld().spawn(a1, CaveSpider.class);
+    	          CaveSpider s2 = (CaveSpider)targetPlayer.getWorld().spawn(a2, CaveSpider.class);
+    	          CaveSpider s3 = (CaveSpider)targetPlayer.getWorld().spawn(a3, CaveSpider.class);
+    	          CaveSpider s4 = (CaveSpider)targetPlayer.getWorld().spawn(a4, CaveSpider.class);
+
+    	          s1.setTarget(targetPlayer);
+    	          s2.setTarget(targetPlayer);
+    	          s3.setTarget(targetPlayer);
+    	          s4.setTarget(targetPlayer);
+
+    	          cs.sendMessage(ChatColor.GRAY + "You spawned Cave Spiders around " + targetPlayer.getDisplayName() + "!");
+    	        } else {
+    	          cs.sendMessage(ChatColor.RED + "Error: The player is offline.");
+    	        }
+    	      } else if (args.length > 1)
+    	        player.sendMessage(ChatColor.RED + "Error: Too many arguments!");
+    	      else if (args.length < 1) {
+    	        player.sendMessage(ChatColor.RED + "Error: Not enough arguments!");
+    	      }
+    	    }
+
     return false;
   }
 }
