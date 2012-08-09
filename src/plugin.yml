@@ -1,7 +1,8 @@
 name: Creep
-author: Sciguymjm
+manager: Sciguymjm
+authors: Sciguyjm, coltonj96
 main: me.sciguymjm.Creep.Creep
-version: 1.5
+version: 1.6
 description: >
              Spawns mobs at a player's location.
 commands:
@@ -17,14 +18,12 @@ commands:
     description: Spawn spiders around a player.
   pigzombie:
     description: Spawn pig zombies around a player
-  swarm:
-    description: Spawn 8 monsters around a player
-  villager:
-    description: Spawn villagers around a player
-  irongolem:
-    description: Spawn irongolems around a player
-  pcreeper:
-    description: Spawn pig zombies around a player
+  annoy:
+    description: Spawn annoying villagers around a player
+  smash:
+    description: Spawn iron golems around a player
+  power:
+    description: Spawn powered creepers around a player
 permissions:
   creep.*:
     [optional permission attributes]
@@ -40,9 +39,9 @@ permissions:
     [optional permission attributes]
   creep.swarm:
     [optional permission attributes]
-  creep.villager:
+  creep.smash:
     [optional permission attributes]
-  creep.irongolem:
+  creep.power:
     [optional permission attributes]
-  creep.pcreeper:
+  creep.annoy:
     [optional permission attributes]
