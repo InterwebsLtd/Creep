@@ -534,8 +534,8 @@ public class Creep extends JavaPlugin
         player.sendMessage(ChatColor.RED + "Error: Not enough arguments!");
       }
     }
-    if (((player.hasPermission("creep.distract")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
-      (string.equalsIgnoreCase("distract"))) {
+    if (((player.hasPermission("creep.villager")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
+      (string.equalsIgnoreCase("villager"))) {
       if (args.length == 1) {
         if (player.getServer().getPlayer(args[0]) != null) {
           Player targetPlayer = Bukkit.getServer().getPlayer(args[0]);
