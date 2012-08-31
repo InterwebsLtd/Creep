@@ -26,14 +26,14 @@ commands:
     description: Spawn powered creepers around a player
   blaze:
     description: Spawn blazes around a player
-  distract:
-    description: Spawn villagers around a player
   rid:
     description: Rid the area of a certain type of mob.
-  steak:
+  cow:
     description: Spawn cows around a player
   skittles:
     description: Spawn sheep around a player
   ghast:
     description: Spawn ghasts around a player
+  pig:
+    description: Spawn pigs around a player
 permissions:
