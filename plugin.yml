@@ -27,11 +27,3 @@ commands:
   blaze:
     description: Spawn blazes around a player
 permissions:
-  creep.*:
-    [optional permission attributes]
-  creep.creep:
-    [optional permission attributes]
-  creep.skeleton:
-    [optional permission attributes]
-  creep.zombie:
-    [optional permission attributes]
