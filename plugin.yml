@@ -1,7 +1,7 @@
 name: Creep
 author: Sciguymjm
 main: me.sciguymjm.Creep.Creep
-version: 1.7
+version: 1.9
 description: Spawns mobs at a player's location.
 commands:
   creep:
@@ -23,7 +23,9 @@ commands:
   irongolem:
     description: Spawn irongolems around a player
   pcreeper:
-    description: Spawn pig zombies around a player
+    description: Spawn powered creepers around a player
+  blaze:
+    description: Spawn blazes around a player
 permissions:
   creep.*:
     [optional permission attributes]
@@ -32,16 +34,4 @@ permissions:
   creep.skeleton:
     [optional permission attributes]
   creep.zombie:
-    [optional permission attributes]
-  creep.spider:
-    [optional permission attributes]
-  creep.pigzombie:
-    [optional permission attributes]
-  creep.swarm:
-    [optional permission attributes]
-  creep.villager:
-    [optional permission attributes]
-  creep.irongolem:
-    [optional permission attributes]
-  creep.pcreeper:
     [optional permission attributes]
