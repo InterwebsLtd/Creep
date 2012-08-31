@@ -259,8 +259,8 @@ public class Creep extends JavaPlugin
       else if (args.length < 1)
         player.sendMessage(ChatColor.RED + "Error: Not enough arguments!");
     double y;
-    if (((player.hasPermission("creep.power")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
-      (string.equalsIgnoreCase("power"))) {
+    if (((player.hasPermission("creep.pcreeper")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
+      (string.equalsIgnoreCase("pcreeper"))) {
       if (args.length == 1) {
         if (player.getServer().getPlayer(args[0]) != null) {
           Player targetPlayer = Bukkit.getServer().getPlayer(args[0]);
@@ -645,8 +645,8 @@ public class Creep extends JavaPlugin
       }
     }
 
-    if (((player.hasPermission("creep.steak")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
-      (string.equalsIgnoreCase("steak"))) {
+    if (((player.hasPermission("creep.cow")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
+      (string.equalsIgnoreCase("cow"))) {
       if (args.length == 1) {
         if (player.getServer().getPlayer(args[0]) != null) {
           Player targetPlayer = Bukkit.getServer().getPlayer(args[0]);
@@ -688,8 +688,8 @@ public class Creep extends JavaPlugin
       }
     }
 
-    if (((player.hasPermission("creep.bacon")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
-      (string.equalsIgnoreCase("bacon"))) {
+    if (((player.hasPermission("creep.pig")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
+      (string.equalsIgnoreCase("pig"))) {
       if (args.length == 1) {
         if (player.getServer().getPlayer(args[0]) != null) {
           Player targetPlayer = Bukkit.getServer().getPlayer(args[0]);
@@ -729,10 +729,9 @@ public class Creep extends JavaPlugin
       else if (args.length < 1) {
         player.sendMessage(ChatColor.RED + "Error: Not enough arguments!");
       }
-    }
 
-    if (((player.hasPermission("creep.smash")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
-      (string.equalsIgnoreCase("smash"))) {
+    if (((player.hasPermission("creep.irongolem")) || (player.isOp()) || (player.hasPermission("creep.*"))) && 
+      (string.equalsIgnoreCase("irongolem"))) {
       if (args.length == 1) {
         if (player.getServer().getPlayer(args[0]) != null) {
           Player targetPlayer = Bukkit.getServer().getPlayer(args[0]);
@@ -949,7 +948,8 @@ public class Creep extends JavaPlugin
         }
       }
     }
+  }
+	return false;
     
-    return false;
   }
 }

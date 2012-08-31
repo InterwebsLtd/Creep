@@ -22,8 +22,18 @@ commands:
     description: Spawn villagers around a player
   irongolem:
     description: Spawn irongolems around a player
-  pcreeper:
+  power:
     description: Spawn powered creepers around a player
   blaze:
     description: Spawn blazes around a player
+  distract:
+    description: Spawn villagers around a player
+  rid:
+    description: Rid the area of a certain type of mob.
+  steak:
+    description: Spawn cows around a player
+  skittles:
+    description: Spawn sheep around a player
+  ghast:
+    description: Spawn ghasts around a player
 permissions:
